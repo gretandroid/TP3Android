@@ -1,4 +1,4 @@
-package education.cccp.tp3android;
+package education.cccp.basics;
 
 import android.content.Context;
 
