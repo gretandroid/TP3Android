@@ -4,4 +4,49 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"/>
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/lastNameTextViewId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="13dp"
+        android:text="Nom"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/firstNameTextViewId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lastNameTextViewId"
+        android:layout_alignStart="@+id/lastNameTextViewId"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="22dp"
+        android:text="Prénom"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/lastNameEditText"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/lastNameTextViewId"
+        android:layout_marginStart="32dp"
+        android:layout_toEndOf="@+id/lastNameTextViewId"
+        android:ems="10"
+        android:hint="saisir votre nom"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/firstNameEditText"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/firstNameTextViewId"
+        android:layout_marginStart="5dp"
+        android:layout_toEndOf="@+id/firstNameTextViewId"
+        android:ems="10"
+        android:hint="saisir votre prénom"
+        android:inputType="textPersonName" />
+</RelativeLayout>
